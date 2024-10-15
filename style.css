@@ -22,7 +22,7 @@ header {
 
 /* Hero Section */
 .heroSection {
-  background-image: url("/Assets/hero-bg.jpg");
+  background-image: url("https://bootstrapmade.com/content/demo/BizLand/assets/img/hero-bg.jpg");
   background-size: cover; /* Ensure the image covers the entire section */
   background-position: center; /* Center the background image */
   height: 70vh;
