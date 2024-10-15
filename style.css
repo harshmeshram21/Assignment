@@ -1,0 +1,139 @@
+body {
+  margin: 0%;
+  padding: 0%;
+}
+/* Header Section */
+header {
+  background-color: rgb(50, 111, 241);
+  color: white;
+  padding: 3px;
+}
+
+/* NavBar Section */
+.nav-link:hover {
+  color: blue !important; /* Use !important to override Bootstrap's default styles */
+}
+.nav-link {
+  font-weight: 700;
+}
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block; /* Show dropdown on hover */
+}
+
+/* Hero Section */
+.heroSection {
+  background-image: url("/Assets/hero-bg.jpg");
+  background-size: cover; /* Ensure the image covers the entire section */
+  background-position: center; /* Center the background image */
+  height: 70vh;
+  width: 100%;
+}
+
+.heroEle {
+  margin-left: 10%;
+}
+
+.ytbtn:hover {
+  color: blue !important; /* Use !important to override Bootstrap's default styles */
+}
+
+/* .about {
+  display: inline-block;
+  background-color: #68c3ed;
+  /* background-color: color(srgb 0.0627451 0.431373 0.917647/0.1);
+  background-color: color(srgb 0.678 0.847 0.902 / 0.5); */
+/* border-radius: 20px;
+  padding: 0.2rem 1rem;
+} */
+.about,
+.service,
+.contact,
+.portfolio {
+  display: inline-block;
+  background-color: rgba(104, 195, 237, 0.8); /* Slightly transparent blue */
+  border-radius: 20px;
+  padding: 0.5rem 1.5rem; /* Increased padding for better spacing */
+  color: #fff; /* White text for better contrast */
+  font-weight: 600; /* Bold text */
+  font-size: 1.1rem; /* Slightly larger font size */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.3s, background-color 0.3s; /* Smooth transition for hover effects */
+}
+
+.about:hover {
+  background-color: rgba(104, 195, 237, 1);
+}
+
+.service-card {
+  transition: border-color 0.3s ease;
+  border: 1px solid #dee2e6;
+}
+
+.service-card:hover {
+  border-color: blue; /* Change border color to blue on hover */
+}
+.about-section {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.navbartwo {
+  position: sticky;
+  background-color: #dee2e6;
+}
+.service-icon,
+.about-icon {
+  color: rgb(38, 136, 248);
+}
+
+.list-item {
+  transition: background-color 0.3s;
+}
+
+.list-item:hover {
+  background-color: rgb(10, 85, 234);
+  color: white;
+}
+/* Style for list items */
+.list-container .list-item {
+  margin: 5px 10px; /* Space between list items */
+  padding: 20px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.list-container .list-item.active {
+  background-color: rgb(10, 85, 234);
+  color: white;
+}
+
+.list-container .list-item:hover:not(.active) {
+  background-color: rgb(10, 85, 234);
+  color: white;
+}
+
+/* Image container styling */
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px; /* Space between images */
+  width: 80%; /* Container takes 80% of its parent width */
+}
+
+.image-container img {
+  flex: 1 1 100%; /* Images stretch to take full width */
+  max-width: 300px; /* Max width for larger screens */
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .image-container {
+    width: 100%; /* Full width on small screens */
+  }
+
+  .image-container img {
+    width: 100%; /* Full width images on smaller screens */
+    max-width: none;
+  }
+}
